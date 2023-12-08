@@ -56,8 +56,8 @@ df_longlat['LON'] = df_longlat['Longitude']*-1
 
 
 df_longlat=df_longlat.drop(['Latitude','Longitude', 'Lat Degrees', 'Lat Minutes', 'Lat Seconds', 'Long Degrees', 'Long Minutes', 'Long Seconds'], axis=1)
-st.dataframe(df_longlat, use_container_width=True)
+#st.dataframe(df_longlat, use_container_width=True)
      
      
      
-st.map(df_longlat, color='#529c98' )
+st.map(df_longlat, color='#529c98' ,zoom=7)
