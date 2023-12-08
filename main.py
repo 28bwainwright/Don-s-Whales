@@ -3,7 +3,7 @@ import pandas as pd
 import csv
 import plotly.express as px
 
-file_path = 'C:\\Users\\mhcwainwri\\Documents\\AppDev\\Python\\misc\\79_FAL.csv'
+file_path = '79_FAL.csv'
 
 data_dict = []
 with open(file_path, 'r') as file:
