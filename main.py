@@ -3,6 +3,7 @@ import pandas as pd
 import csv
 
 file_path = '79_FAL.csv'
+st.set_page_config("Don's Whale Data 1979", page_icon=":whale:", layout='wide')
 
 data_dict = []
 with open(file_path, 'r') as file:
@@ -56,9 +57,15 @@ df_longlat['LON'] = df_longlat['Longitude']*-1
 
 
 df_longlat=df_longlat.drop(['Latitude','Longitude', 'Lat Degrees', 'Lat Minutes', 'Lat Seconds', 'Long Degrees', 'Long Minutes', 'Long Seconds'], axis=1)
+
 df_longlat = df_longlat[df_longlat['LAT'] != 0]
 #st.dataframe(df_longlat, use_container_width=True)
      
+    
+    
+st.title("Don Ljungblad Whale Research and Sighting Data")
+st.subheader('Northern Alaska: Fall of 1979')
      
      
-st.map(df_longlat, color='#529c98' ,zoom=7)
+st.map(df_longlat, color='#529c98', zoom=5, use_container_width=True)
+     
