@@ -8,9 +8,6 @@ file_path = 'LongLat79.csv'
 
 st.set_page_config("Don's Whale Data 1979", page_icon=":whale:", layout='wide')
 
-
-    
-
 df_longlat = pd.read_csv(file_path)    
          
 st.title("Don Ljungblad Whale Research and Sighting Data")
@@ -30,5 +27,6 @@ fig.update_layout(
         }
       ])
 fig.update_layout(height=1000)
+
 st.plotly_chart(fig, use_container_width=True)
      
