@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 import csv
 
-file_path = '79_FAL.csv'
+file_path = 'LongLat79.csv'
+
 st.set_page_config("Don's Whale Data 1979", page_icon=":whale:", layout='wide')
-st.set_page_config("Don's Whale Data 1979", page_icon=":whale:", layout='wide')
+
 
     
 
