@@ -29,6 +29,6 @@ fig.update_layout(
             ]
         }
       ])
-fig.update_layout(height=1200)
+fig.update_layout(height=1000)
 st.plotly_chart(fig, use_container_width=True)
      
