@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import csv
+import plotly.express as px
 
 file_path = 'LongLat79.csv'
 
