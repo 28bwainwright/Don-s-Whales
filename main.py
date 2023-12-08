@@ -56,6 +56,7 @@ df_longlat['LON'] = df_longlat['Longitude']*-1
 
 
 df_longlat=df_longlat.drop(['Latitude','Longitude', 'Lat Degrees', 'Lat Minutes', 'Lat Seconds', 'Long Degrees', 'Long Minutes', 'Long Seconds'], axis=1)
+df_longlat = df_longlat[df_longlat['LAT'] != 0]
 #st.dataframe(df_longlat, use_container_width=True)
      
      
