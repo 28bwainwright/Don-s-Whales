@@ -15,7 +15,7 @@ st.subheader('Northern Alaska: Fall of 1979')
 
 fig = px.scatter_mapbox(df_longlat, lat='LAT', lon='LON', color='Season', zoom=5, hover_name='Year', hover_data=['Season', 'LAT', 'LON'], color_discrete_sequence=px.colors.qualitative.Light24)
 fig.update_layout(
-    mapbox_style="white-bg",
+    mapbox_style="carto-positron",
     mapbox_layers=[
         {
             "below": 'traces',
