@@ -60,4 +60,4 @@ st.dataframe(df_longlat, use_container_width=True)
      
      
      
-st.map(df_longlat, color='#529c98', )
+st.map(df_longlat, color='#529c98' )
